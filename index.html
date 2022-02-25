@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+
+    <style>
+        body {
+            max-width: 960px;
+            width: 100%;
+            margin: 0 auto;
+            
+        }
+           
+            
+    
+        .image-grid {
+            display: grid;
+            --gap: 60px;
+            --num-cols: 5;
+            --row-height: 125px;
+            box-sizing: border-box;
+            grid-template-columns: repeat(var(--num-cols), 2fr);
+            grid-auto-rows: var(--row-height);
+            gap: var(--gap);
+            flex-basis: 18.666%;
+            box-sizing: border-box;
+            padding: 8px;
+            
+        }
+
+        .image-grid > img {
+            width: 110%;
+            height: 100%;
+            background-color: rgb(0, 153, 255);
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+           
+            }
+
+           
+
+
+        .header {
+            padding-left: 10px;
+            padding-bottom: 10px;
+            padding: 5px;
+            margin: 0;
+        }
+
+        .main {
+            font-size: 20px;
+            font-style: normal;
+            padding-top: 30px;
+            padding-left: 10px;
+        }
+        
+
+    
+
+        @media screen and (max-width: 960px) {
+        .image-grid {
+            grid-template-columns: repeat(3, 1fr);
+            }
+            }
+    
+        
+        @media screen and (max-width: 414px) {
+        .image-grid {
+            grid-template-columns: repeat(1, 1fr);
+            }
+            }
+                
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Gallery Heading</h1>
+    </div>
+
+
+    <div class="image-grid">
+        <img src="placeholder.png">
+        <img src="placeholder.png">
+        <img src="placeholder.png">
+        <img src="placeholder.png">
+        <img src="placeholder.png">
+        <img src="placeholder.png">
+        <img src="placeholder.png">
+        <img src="placeholder.png">
+        <img src="placeholder.png">
+        <img src="placeholder.png">
+        </div>
+
+
+
+
+     <div class="main">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit sem ut justo tempor finibus sit amet nec quam. In nec ante laoreet, suscipit diam vel, egestas odio. Vivamus hendrerit laoreet ex non vehicula. Fusce ut iaculis ex. Proin ex ex, ullamcorper et nibh vitae, semper fermentum libero. Sed accumsan mi nisi, ac eleifend eros scelerisque non. Ut semper risus velit, vitae pellentesque quam sodales et.
+
+            Ut dui mi, congue in tellus non, scelerisque lobortis nulla. Fusce at convallis quam. Duis eu massa rhoncus, viverra orci vel, cursus purus. Praesent condimentum massa turpis, non laoreet purus pulvinar a. Suspendisse tincidunt varius dignissim. Ut feugiat dui quis turpis malesuada, sit amet tempus tellus bibendum. Nulla dapibus condimentum quam. Curabitur at lacus vel metus vestibulum vulputate. Vestibulum sit amet erat sapien. Maecenas pretium quis felis ut tincidunt.</p> 
+
+     </div>
+       
+    
+</body>
+</html>
